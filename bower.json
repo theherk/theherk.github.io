@@ -1,0 +1,29 @@
+{
+  "name": "theherk.github.io",
+  "version": "0.0.0",
+  "homepage": "http://theherk.com",
+  "authors": [
+    "Herkermer Sherwood <theherk@gmail.com>"
+  ],
+  "main": "index.html",
+  "keywords": [
+    "Herkermer",
+    "Sherwood",
+    "DevOps",
+    "Resume"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "~0.3.0",
+    "bootstrap": "~3.3.4",
+    "gulp": "~3.9.0",
+    "normalize.css": "~3.0.3"
+  }
+}

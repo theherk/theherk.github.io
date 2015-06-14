@@ -1,0 +1,29 @@
+{
+  "name": "theherk.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-order": "^1.1.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uglifycss": "^1.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theherk/theherk.github.io.git"
+  },
+  "author": "Herkermer Sherwood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theherk/theherk.github.io/issues"
+  },
+  "homepage": "https://github.com/theherk/theherk.github.io#readme"
+}
