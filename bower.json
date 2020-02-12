@@ -1,17 +1,11 @@
 {
   "name": "theherk.github.io",
   "version": "0.0.0",
-  "homepage": "http://theherk.com",
+  "homepage": "http://www.theherk.com",
   "authors": [
-    "Herkermer Sherwood <theherk@gmail.com>"
+    "Adam Sherwood <theherk@gmail.com>"
   ],
   "main": "index.html",
-  "keywords": [
-    "Herkermer",
-    "Sherwood",
-    "DevOps",
-    "Resume"
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
