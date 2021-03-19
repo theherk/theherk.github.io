@@ -23,17 +23,25 @@ h1, h2, h3 {
   line-height: 1.1;
 }
 
+.fcont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .card {
   background: hsl(231, 15%, 18%);
   border-radius: 2px;
-  display: inline-block;
   padding: 2rem;
   margin: 1rem;
-  width: 82%;
+  width: 80%;
   box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.16), 0 6px 6px hsla(0, 0%, 0%, 0.12);
 }
 @media only screen and (min-width: 600px) {
-  .card { width: auto }
+  .card {
+    width: auto;
+  }
 }
 
 ol {
