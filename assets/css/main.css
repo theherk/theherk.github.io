@@ -14,6 +14,8 @@
   --card-bg: #292c3c;
   --card-shadow1: hsla(0,0%,0%,0.12);
   --card-shadow2: hsla(0,0%,0%,0.08);
+  --ground1: #292c3c;
+  --ground2: #232634;
 }
 
 /* Catppuccin Latte (light) via system preference */
@@ -31,6 +33,8 @@
     --card-bg: #e6e9ef;
     --card-shadow1: hsla(0,0%,0%,0.06);
     --card-shadow2: hsla(0,0%,0%,0.04);
+    --ground1: #e6e9ef;
+    --ground2: #dce0e8;
   }
 }
 
@@ -48,6 +52,8 @@
   --card-bg: #292c3c;
   --card-shadow1: hsla(0,0%,0%,0.12);
   --card-shadow2: hsla(0,0%,0%,0.08);
+  --ground1: #292c3c;
+  --ground2: #232634;
 }
 
 /* Explicit light override (toggle) */
@@ -64,6 +70,8 @@
   --card-bg: #e6e9ef;
   --card-shadow1: hsla(0,0%,0%,0.06);
   --card-shadow2: hsla(0,0%,0%,0.04);
+  --ground1: #e6e9ef;
+  --ground2: #dce0e8;
 }
 
 body {
@@ -76,6 +84,25 @@ body {
   color: var(--text);
   padding: 0 10px;
   transition: background-color 0.2s, color 0.2s;
+  position: relative;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 66vh;
+  background: repeating-conic-gradient(var(--ground1) 0% 25%, var(--ground2) 0% 50%) 0 0 / 5rem 5rem;
+  transform: perspective(600px) rotateX(60deg);
+  transform-origin: bottom center;
+  z-index: -1;
+  pointer-events: none;
+  transition: background-color 0.2s;
+  -webkit-mask-image: radial-gradient(ellipse 95% 90% at 50% 100%, black 72%, transparent 92%);
+  mask-image: radial-gradient(ellipse 95% 90% at 50% 100%, black 72%, transparent 92%);
 }
 
 a {
