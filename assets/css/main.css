@@ -1,30 +1,97 @@
+/* Catppuccin Frappé (dark) defaults */
+:root {
+  --bg: #303446;
+  --text: #c6d0f5;
+  --heading: #99d1db;
+  --link: #ca9ee6;
+  --link-hover: #949cbb;
+  --link-active: #99d1db;
+  --accent: #f4b8e4;
+  --icon: #949cbb;
+  --list-marker: #ef9f76;
+  --card-bg: #292c3c;
+  --card-shadow1: hsla(0,0%,0%,0.12);
+  --card-shadow2: hsla(0,0%,0%,0.08);
+}
+
+/* Catppuccin Latte (light) via system preference */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #eff1f5;
+    --text: #4c4f69;
+    --heading: #209fb5;
+    --link: #8839ef;
+    --link-hover: #7c7f93;
+    --link-active: #209fb5;
+    --accent: #ea76cb;
+    --icon: #8c8fa1;
+    --list-marker: #fe640b;
+    --card-bg: #e6e9ef;
+    --card-shadow1: hsla(0,0%,0%,0.06);
+    --card-shadow2: hsla(0,0%,0%,0.04);
+  }
+}
+
+/* Explicit dark override (toggle) */
+:root.dark {
+  --bg: #303446;
+  --text: #c6d0f5;
+  --heading: #99d1db;
+  --link: #ca9ee6;
+  --link-hover: #949cbb;
+  --link-active: #99d1db;
+  --accent: #f4b8e4;
+  --icon: #949cbb;
+  --list-marker: #ef9f76;
+  --card-bg: #292c3c;
+  --card-shadow1: hsla(0,0%,0%,0.12);
+  --card-shadow2: hsla(0,0%,0%,0.08);
+}
+
+/* Explicit light override (toggle) */
+:root.light {
+  --bg: #eff1f5;
+  --text: #4c4f69;
+  --heading: #209fb5;
+  --link: #8839ef;
+  --link-hover: #7c7f93;
+  --link-active: #209fb5;
+  --accent: #ea76cb;
+  --icon: #8c8fa1;
+  --list-marker: #fe640b;
+  --card-bg: #e6e9ef;
+  --card-shadow1: hsla(0,0%,0%,0.06);
+  --card-shadow2: hsla(0,0%,0%,0.04);
+}
+
 body {
-  background-color: hsl(231, 15%, 18%);
+  background-color: var(--bg);
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
-  color: hsl(60, 30%, 96%);
+  color: var(--text);
   padding: 0 10px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 a {
-  border-bottom: 1px dotted hsl(326, 100%, 74%);
+  border-bottom: 1px dotted var(--accent);
   padding-bottom: 0.088em;
   text-decoration: none;
 }
 
-a:link { color: hsl(265, 89%, 78%) }
-a:visited { color: hsl(265, 89%, 78%) }
-a:hover { color: hsl(265, 31%, 56%) }
-a:active { color: hsl(191, 97%, 77%) }
+a:link { color: var(--link) }
+a:visited { color: var(--link) }
+a:hover { color: var(--link-hover) }
+a:active { color: var(--link-active) }
 
 i {
-  color: hsl(265, 31%, 56%);
+  color: var(--icon);
 }
 
 ul i {
-  color: hsl(31, 100%, 71%);
+  color: var(--list-marker);
 }
 
 div > ul {
@@ -38,7 +105,7 @@ div > ul > li {
 }
 
 div > ul > li:not(:last-child):after {
-  color: hsl(191, 97%, 77%);
+  color: var(--link-active);
   content: '\f01dd';
   display: inline-block;
   font-family: 'NerdFontsSymbols Nerd Font';
@@ -46,7 +113,7 @@ div > ul > li:not(:last-child):after {
 }
 
 h1, h2, h3 {
-  color: hsl(191, 97%, 77%);
+  color: var(--heading);
   line-height: 1.1;
 }
 
@@ -54,7 +121,7 @@ h2, h3 {
   line-height: 1.8em;
   margin-top: 1.8em;
   text-decoration: none;
-  text-decoration-color: hsl(326, 100%, 74%);
+  text-decoration-color: var(--accent);
   text-decoration-style: dotted;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 1px;
@@ -62,7 +129,7 @@ h2, h3 {
 }
 
 h2:after {
-  color: hsl(191, 97%, 77%);
+  color: var(--heading);
   content: '\f105';
   display: inline-block;
   font-family: 'NerdFontsSymbols Nerd Font';
@@ -79,12 +146,13 @@ h2:after {
 }
 
 .card {
-  background: hsl(231, 15%, 18%);
+  background: var(--card-bg);
   border-radius: 2px;
   padding: 2rem;
   margin: 1rem;
   width: 80%;
-  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.16), 0 6px 6px hsla(0, 0%, 0%, 0.12);
+  box-shadow: 0 10px 10px var(--card-shadow1), 0 6px 6px var(--card-shadow2);
+  transition: background-color 0.2s, color 0.2s;
 }
 @media only screen and (min-width: 600px) {
   .card {
@@ -99,8 +167,28 @@ ol {
 ol li { counter-increment: item }
 ol li:before {
   content: counter(item) ". ";
-  color: hsl(31, 100%, 71%);
+  color: var(--list-marker);
   display: inline-block;
   width: 2rem;
   margin-left: -2rem;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid var(--icon);
+  border-radius: 4px;
+  color: var(--icon);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--heading);
+  border-color: var(--heading);
 }

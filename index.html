@@ -6,6 +6,7 @@
     <meta name="keywords" content="theherk, herk, programmer, suprise">
     <meta name="author" content="Adam Sherwood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>theherk</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css">
@@ -13,8 +14,20 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="manifest" href="/assets/img/site.webmanifest">
+    <script>
+      (function() {
+        var pref = localStorage.getItem('theme-preference');
+        if (pref === 'dark' || pref === 'light') {
+          document.documentElement.classList.add(pref);
+        }
+      })();
+    </script>
   </head>
   <body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <i class="nf nf-md-weather_sunny"></i>
+    </button>
+
     <header>
       <h1>Adam Sherwood</h1>
       <p>I aim for simplicity: simple speech, simple code, simple life.</p>
@@ -107,5 +120,50 @@
         </ol>
       </div>
     </div>
+
+    <script>
+      (function() {
+        var btn = document.getElementById('theme-toggle');
+        var icon = btn.querySelector('i');
+
+        function getEffectiveTheme() {
+          var stored = localStorage.getItem('theme-preference');
+          if (stored === 'dark' || stored === 'light') return stored;
+          return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+
+        function updateIcon(theme) {
+          if (theme === 'dark') {
+            icon.className = 'nf nf-md-weather_sunny';
+          } else {
+            icon.className = 'nf nf-md-weather_night';
+          }
+        }
+
+        function applyTheme(theme, store) {
+          document.documentElement.classList.remove('dark', 'light');
+          if (store) {
+            document.documentElement.classList.add(theme);
+            localStorage.setItem('theme-preference', theme);
+          }
+          updateIcon(theme);
+        }
+
+        // Initialize icon based on effective theme
+        updateIcon(getEffectiveTheme());
+
+        btn.addEventListener('click', function() {
+          var next = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
+          applyTheme(next, true);
+        });
+
+        // Follow system preference when no explicit override
+        window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function() {
+          if (!localStorage.getItem('theme-preference')) {
+            updateIcon(getEffectiveTheme());
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
