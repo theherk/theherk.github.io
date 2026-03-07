@@ -27,17 +27,17 @@ ul i {
   color: hsl(31, 100%, 71%);
 }
 
-p + ul {
+div > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-p + ul > li {
+div > ul > li {
   display: inline;
 }
 
-p + ul > li:not(:last-child):after {
+div > ul > li:not(:last-child):after {
   color: hsl(191, 97%, 77%);
   content: '\f01dd';
   display: inline-block;
