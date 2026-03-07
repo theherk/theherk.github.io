@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css');
+
 /* Catppuccin Frappé (dark) defaults */
 :root {
   --bg: #303446;
@@ -69,6 +71,7 @@ body {
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
+  font-family: 'Victor Mono', monospace;
   font-size: 18px;
   color: var(--text);
   padding: 0 10px;
