@@ -144,23 +144,32 @@ h2:after {
 .fcont {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .fcont {
+    margin-left: -5rem;
+    margin-right: -5rem;
+  }
 }
 
 .card {
   background: var(--card-bg);
-  border-radius: 2px;
-  padding: 2rem;
-  margin: 1rem;
-  width: 80%;
-  box-shadow: 0 10px 10px var(--card-shadow1), 0 6px 6px var(--card-shadow2);
+  border-radius: 4px;
+  padding: 0 1.5rem 1.25rem;
+  width: 100%;
+  box-shadow: 0 4px 6px var(--card-shadow1), 0 2px 4px var(--card-shadow2);
   transition: background-color 0.2s, color 0.2s;
 }
 @media only screen and (min-width: 600px) {
   .card {
-    width: auto;
+    width: 17rem;
   }
+}
+
+.card h3 {
+  margin-top: 0.5rem;
 }
 
 ol {
