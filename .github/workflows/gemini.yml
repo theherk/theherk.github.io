@@ -1,0 +1,23 @@
+name: Publish Gemini Capsule
+
+on:
+  push:
+    branches: [master]
+    paths: [index.gmi]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build tarball
+        run: tar -cz index.gmi > site.tar.gz
+
+      - name: Publish to SourceHut Pages
+        run: |
+          curl -sf -X POST \
+            -H "Authorization: Bearer ${{ secrets.SRHT_TOKEN }}" \
+            -F "content=@site.tar.gz" \
+            -F "protocol=GEMINI" \
+            https://pages.sr.ht/publish/gemini.theherk.com

@@ -1,0 +1,66 @@
+# Adam Sherwood
+
+I aim for simplicity: simple speech, simple code, simple life.
+
+## Code
+
+=> https://github.com/theherk Github
+=> https://gitlab.com/theherk Gitlab
+=> https://git.sr.ht/~h4s Source Hut
+=> https://bitbucket.org/theherk/ Bitbucket
+
+## Resume
+
+=> https://bytebucket.org/theherk/resume/raw/02545d4f8a3f0a2a36ac1c6bf788c013ae1505ae/resume.pdf Resume (pdf)
+=> https://bitbucket.org/theherk/resume Resume (source)
+=> https://stackoverflow.com/users/2081835/theherk?tab=profile Stack Overflow Profile
+
+## Top 5's
+
+### Music Artists
+
+=> https://youtu.be/-I_T3XvzPaM 1. Paul Simon
+=> https://youtu.be/y-E7_VHLvkE 2. Pink Floyd
+=> https://youtu.be/5--ZQMmkkV0 3. The Decemberists
+=> https://youtu.be/evBgLWQwAFA 4. AURORA
+=> https://youtu.be/qJq9y9xPKWs 5. Tool
+
+### Foods
+
+* 1. Peanut Butter
+* 2. Macaroni and Cheese
+* 3. Pizza
+* 4. Proper street tacos
+* 5. Peanut Butter
+
+### People
+
+* 1. My Wife
+* 2. My Daughter
+* 3. My Mom
+* 4. My Dad
+* 5. [redacted]
+
+### Programming Tools
+
+=> https://neovim.io/ 1. Neovim
+=> https://wezfurlong.org/wezterm/ 2. Wezterm
+=> https://fishshell.com/ 3. Fish
+=> https://martinvonz.github.io/jj/ 4. jujutsu
+=> https://rubjo.github.io/victor-mono/ 5. Victor Mono
+
+### Programming Languages
+
+=> https://www.rust-lang.org/ 1. Rust
+=> https://go.dev/ 2. Go
+=> https://gleam.run/ 3. Gleam
+=> https://ziglang.org/ 4. Zig
+=> https://www.python.org/ 5. Python
+
+### Productivity Tools
+
+=> https://zen-browser.app/ 1. Zen Browser
+=> https://www.raycast.com/ 2. Raycast
+=> https://github.com/epwalsh/obsidian.nvim 3. obsidian.nvim
+=> https://obsidian.md/ 4. Obsidian
+=> https://github.com/xiaogdgenuine/Doll 5. Doll
