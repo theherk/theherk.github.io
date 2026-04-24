@@ -60,7 +60,8 @@ I aim for simplicity: simple speech, simple code, simple life.
 ### Productivity Tools
 
 => https://zen-browser.app/ 1. Zen Browser
-=> https://www.raycast.com/ 2. Raycast
+=> https://mise.jdx.dev/ 2. Mise
 => https://github.com/epwalsh/obsidian.nvim 3. obsidian.nvim
-=> https://obsidian.md/ 4. Obsidian
-=> https://github.com/xiaogdgenuine/Doll 5. Doll
+=> https://tunaformac.com/ 4. Tuna
+=> https://github.com/stonerl/Thaw 5a. Thaw
+=> https://github.com/xiaogdgenuine/Doll 5b. Doll
