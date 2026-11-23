@@ -2,7 +2,7 @@ name: Publish Gemini Capsule
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths: [index.gmi]
 
 jobs:

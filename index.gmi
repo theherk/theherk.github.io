@@ -44,9 +44,9 @@ I aim for simplicity: simple speech, simple code, simple life.
 ### Programming Tools
 
 => https://neovim.io/ 1. Neovim
-=> https://wezfurlong.org/wezterm/ 2. Wezterm
-=> https://fishshell.com/ 3. Fish
-=> https://martinvonz.github.io/jj/ 4. jujutsu
+=> https://fishshell.com/ 2. Fish
+=> https://www.superlogical.com/ 3. Rex
+=> https://jj-vcs.github.io/jj/ 4. jujutsu
 => https://rubjo.github.io/victor-mono/ 5. Victor Mono
 
 ### Programming Languages
@@ -59,9 +59,9 @@ I aim for simplicity: simple speech, simple code, simple life.
 
 ### Productivity Tools
 
-=> https://zen-browser.app/ 1. Zen Browser
-=> https://mise.jdx.dev/ 2. Mise
-=> https://github.com/epwalsh/obsidian.nvim 3. obsidian.nvim
-=> https://tunaformac.com/ 4. Tuna
-=> https://github.com/stonerl/Thaw 5a. Thaw
-=> https://github.com/xiaogdgenuine/Doll 5b. Doll
+=> https://www.firefox.com/ 1. Firefox
+=> https://github.com/obsidian-nvim/obsidian.nvim 2. obsidian.nvim
+=> https://mise.jdx.dev/ 3. Mise
+=> https://github.com/stonerl/Thaw 4a. Thaw
+=> https://github.com/xiaogdgenuine/Doll 4b. Doll
+=> https://github.com/theherk/zop 5. zop
