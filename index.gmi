@@ -45,7 +45,7 @@ I aim for simplicity: simple speech, simple code, simple life.
 
 => https://neovim.io/ 1. Neovim
 => https://fishshell.com/ 2. Fish
-=> https://www.superlogical.com/ 3. Rex
+=> https://mise.jdx.dev/ 3. Mise
 => https://jj-vcs.github.io/jj/ 4. jujutsu
 => https://rubjo.github.io/victor-mono/ 5. Victor Mono
 
@@ -60,8 +60,8 @@ I aim for simplicity: simple speech, simple code, simple life.
 ### Productivity Tools
 
 => https://www.firefox.com/ 1. Firefox
-=> https://github.com/obsidian-nvim/obsidian.nvim 2. obsidian.nvim
-=> https://mise.jdx.dev/ 3. Mise
+=> https://nikitabobko.github.io/AeroSpace 2. AeroSpace
+=> https://github.com/obsidian-nvim/obsidian.nvim 3. obsidian.nvim
 => https://github.com/stonerl/Thaw 4a. Thaw
 => https://github.com/xiaogdgenuine/Doll 4b. Doll
 => https://github.com/theherk/zop 5. zop
